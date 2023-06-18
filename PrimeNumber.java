@@ -18,7 +18,7 @@ public class PrimeNumber {
 
     private static void findPrimeOptimizedBest(int num) {
         int count=0;
-        for(int div=1;div*div<=num;div++){
+        for(int div=2;div*div<=num;div++){
             if(num%div==0){
                 count++;
                 break;
@@ -33,7 +33,7 @@ public class PrimeNumber {
 
     private static void findPrimeOptimized(int num) {
         int count=0;
-        for(int div=1;div*div<=num;div++){
+        for(int div=2;div*div<=num;div++){
             if(num%div==0){
                 count++;
             }
